@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundscreen"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/etMorning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter morning screen time (minutes)"
+        android:inputType="number"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/etAfternoon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etMorning"
+        android:layout_marginTop="16dp"
+        android:hint="Enter afternoon screen time (minutes)"
+        android:inputType="number"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:layout_below="@id/etAfternoon"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:layout_below="@id/etAfternoon"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@id/btnAdd"
+        android:layout_marginStart="16dp"/>
+
+    <Button
+        android:id="@+id/btnViewDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Details"
+        android:layout_below="@id/btnAdd"
+        android:layout_marginTop="16dp"/>
+</RelativeLayout>
